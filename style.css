@@ -470,3 +470,92 @@ img {
 .backdrop-blur {
   backdrop-filter: blur(10px);
 }
+
+
+/* Service Detail Pages */
+.service-detail-card {
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-detail-card h4 {
+  color: var(--dark-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.service-detail-card p {
+  color: var(--text-color);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Sidebar Cards */
+.sidebar-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+.sidebar-card h4 {
+  color: var(--dark-color);
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.attorney-mini-card {
+  text-align: center;
+}
+
+.attorney-mini-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid var(--border-color);
+}
+
+.attorney-mini-info h5 {
+  color: var(--dark-color);
+  margin-bottom: 5px;
+}
+
+.attorney-mini-info .text-muted {
+  margin-bottom: 10px;
+}
+
+.attorney-mini-info .small {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Responsive Design for Service Pages */
+@media (max-width: 768px) {
+  .service-detail-card {
+    padding: 20px;
+  }
+  
+  .sidebar-card {
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .attorney-mini-photo {
+    width: 80px;
+    height: 80px;
+  }
+}
