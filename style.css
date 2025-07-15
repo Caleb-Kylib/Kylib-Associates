@@ -263,6 +263,122 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
 }
 
+/* Attorney page styles */
+.legal-hero-section {
+    position: relative;
+    background-image: url(./assets/img/pexels-ayse-demir-2152256021-32225875.jpg); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+    color: white;
+    text-align: center;
+}
+
+.legal-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.legal-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+    padding-top: 3rem;
+}
+
+.legal-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.legal-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.cta-section {
+    position: relative;
+    background-color: rgb(99, 65, 65); /* Bootstrap primary color */
+    color: white;
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(13,110,253,0.9), rgba(0,0,0,0.4));
+    z-index: 1;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-subheading {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #f8f9fa;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.cta-btn-primary {
+    background-color: #ffffff;
+    color: #a5a9af;
+    border: none;
+}
+
+.cta-btn-primary:hover {
+    background-color: #e2e6ea;
+    color: #0a58ca;
+}
+
+.cta-btn-outline {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.cta-btn-outline:hover {
+    background-color: #ffffff;
+    color: #0d6efd;
+}
+
+
+
+
 
 /* Testimonial Section */
 .testimonial-card {
@@ -743,3 +859,23 @@ img {
             background-color: #444; /* Slightly lighter on hover */
             border-color: #00adb5; /* Replaced --accent-color */
         }
+
+        .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.value-card:hover .icon-wrapper {
+    background-color: #e0e7ff; /* Light blue hover effect */
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
